@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 
 if __name__ == "__main__":
     """Import and print the value of 'a'"""
