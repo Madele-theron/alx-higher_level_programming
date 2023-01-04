@@ -9,14 +9,18 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b> ")
         exit(1)
 
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
     if sys.argv[2] == "+":
-        add(sys.argv[1], sys.argv[3])
+        print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     elif sys.argv[2] == "-":
-        sub(sys.argv[1], sys.argv[3])
+        print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
     elif sys.argv[2] == "/":
-        div(sys.argv[1], sys.argv[3])
+        print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
     elif sys.argv[2] == "*":
-        mul(sys.argv[1], sys.argv[3])
+        print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and / ")
         exit(1)
+
+# :d = decimal integer
